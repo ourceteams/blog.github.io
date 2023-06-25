@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="轻松抓住内容关键字！, 开源小分队">
+    <meta name="keywords" content="智能的数据库客户端工具真香！, 开源小分队">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>轻松抓住内容关键字！ | 开源小分队</title>
+    <title>智能的数据库客户端工具真香！ | 开源小分队</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">轻松抓住内容关键字！</h1>
+                    <h1 class="description center-align post-title">智能的数据库客户端工具真香！</h1>
                 </div>
             </div>
         </div>
@@ -387,8 +387,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%80%81%E8%83%A1/">
-                                <span class="chip bg-color">老胡</span>
+                            <a href="/tags/%E8%83%9C/">
+                                <span class="chip bg-color">胜</span>
                             </a>
                         
                     </div>
@@ -403,7 +403,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-31
+                    2023-06-24
                 </div>
                 
 
@@ -424,19 +424,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>大家好，我是开源大叔。</p>
-<p>今天给大家分享一个非常好用的行为词云图开源项目：<strong>wordcloud</strong>。</p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>当我们看到一篇文章或者电子书的时候，想知道文章或书中主要内容，则可以采用词云图来处理。<br>词云图就是对文本中出现频率较高的<strong>关键词</strong>进行可视化的展现。接下来跟着大叔来看看怎么使用吧。</p>
-<h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><p>在使用之前我们先安装一下 wordcloud</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install wordcloud</span><br></pre></td></tr></table></figure>
-<p>我们先来一个简单的例子，如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> wordcloud <span class="keyword">import</span> WordCloud</span><br><span class="line"></span><br><span class="line">text = <span class="string">&quot;Hello wordcloud&quot;</span></span><br><span class="line"></span><br><span class="line">x, y = np.ogrid[:<span class="number">300</span>, :<span class="number">300</span>]</span><br><span class="line"></span><br><span class="line">mask = (x - <span class="number">150</span>) ** <span class="number">2</span> + (y - <span class="number">150</span>) ** <span class="number">2</span> &gt; <span class="number">130</span> ** <span class="number">2</span></span><br><span class="line">mask = <span class="number">255</span> * mask.astype(<span class="built_in">int</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">wc = WordCloud(background_color=<span class="string">&quot;white&quot;</span>, repeat=<span class="literal">True</span>, mask=mask)</span><br><span class="line">wc.generate(text)</span><br><span class="line"></span><br><span class="line">plt.axis(<span class="string">&quot;off&quot;</span>)</span><br><span class="line">plt.imshow(wc, interpolation=<span class="string">&quot;bilinear&quot;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<p>运行效果图如下：</p>
-<p><img src="https://files.mdnice.com/user/21486/cb5b1e25-f752-47cf-ad77-806b768bfcb8.png"></p>
-<p>上面展示了引文的词语，我们去试一下中文看看效果如何。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">d = path.dirname(__file__) <span class="keyword">if</span> <span class="string">&quot;__file__&quot;</span> <span class="keyword">in</span> <span class="built_in">locals</span>() <span class="keyword">else</span> os.getcwd()</span><br><span class="line">text = <span class="built_in">open</span>(path.join(d, <span class="string">&#x27;info.txt&#x27;</span>)).read()</span><br><span class="line">alice_mask = np.array(Image.<span class="built_in">open</span>(path.join(d, <span class="string">&quot;file/alice_mask.png&quot;</span>)))</span><br><span class="line">stopwords = <span class="built_in">set</span>(STOPWORDS)</span><br><span class="line">stopwords.add(<span class="string">&quot;said&quot;</span>)</span><br><span class="line">wc = WordCloud(font_path=<span class="string">&quot;Hiragino Sans GB.ttc&quot;</span>,background_color=<span class="string">&quot;white&quot;</span>, max_words=<span class="number">2000</span>, mask=alice_mask,</span><br><span class="line">               stopwords=stopwords, contour_width=<span class="number">3</span>, contour_color=<span class="string">&#x27;steelblue&#x27;</span>)</span><br><span class="line">wc.generate(text)</span><br><span class="line">wc.to_file(path.join(d, <span class="string">&quot;alice.png&quot;</span>))</span><br><span class="line">plt.imshow(wc, interpolation=<span class="string">&#x27;bilinear&#x27;</span>)</span><br><span class="line">plt.axis(<span class="string">&quot;off&quot;</span>)</span><br><span class="line">plt.figure()</span><br><span class="line">plt.imshow(alice_mask, cmap=plt.cm.gray, interpolation=<span class="string">&#x27;bilinear&#x27;</span>)</span><br><span class="line">plt.axis(<span class="string">&quot;off&quot;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<p>运行效果如下：<br><img src="https://files.mdnice.com/user/21486/066099c9-9878-4021-80df-1f3f5da6d1d9.png"><br>是不是看起来很酷，通过上面的介绍可以看出底图是可以随意调整的，可以换成自己喜欢的图片，但是有个问题需要注意，如果是中文的话，则需要指定字体 例如 Mac 中得到字体的信息：<br><img src="https://files.mdnice.com/user/21486/b465c840-65a7-4d9b-b27a-4561b85ec232.png"><br>找到 ttc 格式的字体文件 copy 到自己项目中就可以方便的使用啦。</p>
-<h2 id="大叔总结"><a href="#大叔总结" class="headerlink" title="大叔总结"></a>大叔总结</h2><p>上面大叔只是介绍了 wordcloud 的简单使用，在使用的时候还有其他的高级设置，大家可以试起来哦。</p>
+                <p>大家好，我是爱学习的了不起！</p>
+<p>今年最火的 IT 技术当属 AIGC，AI 已经应用到各种场景，最近在逛github时候发现了一个智能且多功能的多数据库客户端工具–Chat2DB，目前在GitHub上标星8k+。</p>
+<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p>Chat2DB 是阿里开源多数据库客户端工具，支持 Windows、Mac、Linux等操作系统，Chat2DB 相比于其他数据库客户端 Navicat、DBeaver，Chat2DB集成了AIGC的能力，能够通过自然语言转换成 SQL，也可以将SQL转换为自然语言，同时还可以优化 SQL。目前支持MySQL、PostgreSQL、Oracle、SQLServer、ClickHouse、OceanBase、H2、SQLite等数据库。</p>
+<p><img src="http://www.itmind.net/wp-content/uploads/2023/06/1687590724-bee9b465b044230.png"></p>
+<h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>项目地址<a target="_blank" rel="noopener" href="https://github.com/alibaba/Chat2DB/releases%EF%BC%8C%E6%A0%B9%E6%8D%AE%E8%87%AA%E5%B7%B1%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82">https://github.com/alibaba/Chat2DB/releases，根据自己操作系统下载安装即可。</a></p>
+<p>配置AI，API_KEY 可以在Chat2DB 官网中获取。</p>
+<p><img src="http://www.itmind.net/wp-content/uploads/2023/06/1687587835-6db6895c9358fdb.jpg"></p>
+<h2 id="自然语言转SQL"><a href="#自然语言转SQL" class="headerlink" title="自然语言转SQL"></a>自然语言转SQL</h2><p>首先准备3张测试表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">-- 1、建部门表</span><br><span class="line">create table dept(</span><br><span class="line">DEPTNO INT(2) NOT NULL PRIMARY KEY,</span><br><span class="line">DNAME VARCHAR(14),</span><br><span class="line">LOC VARCHAR(13)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- 2、建员工表</span><br><span class="line">CREATE TABLE emp(</span><br><span class="line">EMPNO INT(4) NOT NULL PRIMARY KEY,</span><br><span class="line">ENAME VARCHAR(10),</span><br><span class="line">JOB VARCHAR(9),</span><br><span class="line">MGR NUMERIC(4),</span><br><span class="line">HIREDATE DATETIME,</span><br><span class="line">SAL NUMERIC(7,2),</span><br><span class="line">COMM NUMERIC(7,2),</span><br><span class="line">DEPTNO INT(2)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- 3、建工资等级表</span><br><span class="line">CREATE TABLE salgrade (</span><br><span class="line">GRADE NUMERIC,</span><br><span class="line">LOSAL NUMERIC,</span><br><span class="line">HISAL NUMERIC</span><br><span class="line">);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Chat2DB 可以使用自然语言直接添加测试数据，这个功能太香了！查询支持单表查询、多表联合查询。</p>
+<p>温馨提示自然语言转SQL，需要在选中需要处理的语句后选择用于生成的SQL的原始表。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">--- BEGIN ---</span><br><span class="line">员工表插入测试10条测试数据</span><br><span class="line"></span><br><span class="line">--- 自然语言转换 ---</span><br><span class="line">INSERT INTO emp (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) </span><br><span class="line">VALUES </span><br><span class="line">(1, &#x27;John&#x27;, &#x27;Manager&#x27;, NULL, &#x27;2021-01-01&#x27;, 5000, NULL, 1),</span><br><span class="line">(2, &#x27;Jane&#x27;, &#x27;Salesman&#x27;, 1, &#x27;2021-02-01&#x27;, 3000, 500, 1),</span><br><span class="line">(3, &#x27;Bob&#x27;, &#x27;Clerk&#x27;, 1, &#x27;2021-03-01&#x27;, 2000, NULL, 2),</span><br><span class="line">(4, &#x27;Mary&#x27;, &#x27;Salesman&#x27;, 1, &#x27;2021-04-01&#x27;, 2500, 100, 2),</span><br><span class="line">(5, &#x27;Tom&#x27;, &#x27;Manager&#x27;, NULL, &#x27;2021-05-01&#x27;, 6000, NULL, 1),</span><br><span class="line">(6, &#x27;Sue&#x27;, &#x27;Salesman&#x27;, 5, &#x27;2021-06-01&#x27;, 3500, 700, 1),</span><br><span class="line">(7, &#x27;Mike&#x27;, &#x27;Clerk&#x27;, 5, &#x27;2021-07-01&#x27;, 2200, NULL, 2),</span><br><span class="line">(8, &#x27;Lisa&#x27;, &#x27;Salesman&#x27;, 5, &#x27;2021-08-01&#x27;, 2800, 200, 2),</span><br><span class="line">(9, &#x27;Jack&#x27;, &#x27;Manager&#x27;, NULL, &#x27;2021-09-01&#x27;, 7000, NULL, 1),</span><br><span class="line">(10, &#x27;Jill&#x27;, &#x27;Clerk&#x27;, 9, &#x27;2021-10-01&#x27;, 2400, NULL, 2);</span><br><span class="line">--- END --- </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">--- BEGIN ---</span><br><span class="line">部门表插入5条数据</span><br><span class="line"></span><br><span class="line">--- 自然语言转换 ---</span><br><span class="line">INSERT INTO dept (DEPTNO, DNAME, LOC) VALUES </span><br><span class="line">(1, &#x27;部门1&#x27;, &#x27;地点1&#x27;), </span><br><span class="line">(2, &#x27;部门2&#x27;, &#x27;地点2&#x27;), </span><br><span class="line">(3, &#x27;部门3&#x27;, &#x27;地点3&#x27;), </span><br><span class="line">(4, &#x27;部门4&#x27;, &#x27;地点4&#x27;), </span><br><span class="line">(5, &#x27;部门5&#x27;, &#x27;地点5&#x27;);</span><br><span class="line">--- END --- </span><br><span class="line"></span><br><span class="line">--- BEGIN ---</span><br><span class="line">工资等级表插入3条数据</span><br><span class="line">--- 自然语言转换 ---</span><br><span class="line">INSERT INTO salgrade (GRADE, LOSAL, HISAL) VALUES </span><br><span class="line">(1, 700, 1200), </span><br><span class="line">(2, 1201, 1400), </span><br><span class="line">(3, 1401, 2000);</span><br><span class="line">--- END --- </span><br><span class="line"></span><br><span class="line">--- BEGIN ---</span><br><span class="line">查询年龄大于30岁的员工</span><br><span class="line">--- 自然语言转换 ---</span><br><span class="line">SELECT * FROM emp WHERE TIMESTAMPDIFF(YEAR, HIREDATE, CURDATE()) &gt; 30;</span><br><span class="line">--- END --- </span><br><span class="line"></span><br><span class="line">--- BEGIN ---</span><br><span class="line">查询各个部门工资总和</span><br><span class="line"></span><br><span class="line">--- 自然语言转换 ---</span><br><span class="line">SELECT DEPTNO, SUM(SAL) AS TOTAL_SALARY FROM emp GROUP BY DEPTNO;</span><br><span class="line">--- END --- </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="SQL解释"><a href="#SQL解释" class="headerlink" title="SQL解释"></a>SQL解释</h2><p>把SQL翻译为自然语言，适合很长的 sql 语句,便于理解。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">--- BEGIN ---</span><br><span class="line">select ename as &quot;姓名&quot;,sal*12+comm as &quot;年 薪&quot; from emp;</span><br><span class="line"></span><br><span class="line">--- 解释SQL ---</span><br><span class="line">这个SQL语句从emp表中选择ename和sal列，并将sal乘以12加上comm列的值作为“年薪”列。结果将以“姓名”和“年薪”列的形式返回。</span><br><span class="line">--- END --- </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="SQL优化"><a href="#SQL优化" class="headerlink" title="SQL优化"></a>SQL优化</h2><p>对于性能不好的sql，给出优化建议。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">--- BEGIN ---</span><br><span class="line">SELECT COUNT(*) FROM emp WHERE HIREDATE  BETWEEN &#x27;2012-01-01&#x27; AND &#x27;2012-12-31&#x27;;</span><br><span class="line"></span><br><span class="line">--- SQL优化 ---</span><br><span class="line">优化建议如下：</span><br><span class="line"></span><br><span class="line">1. 索引优化：为HIREDATE列创建索引，可以加快查询速度。</span><br><span class="line"></span><br><span class="line">2. 数据库分区：如果emp表非常大，可以考虑对其进行分区，以提高查询效率。</span><br><span class="line"></span><br><span class="line">3. 日期格式优化：将日期格式转换为标准格式，如YYYY-MM-DD，可以避免不必要的转换和比较操作，提高查询效率。</span><br><span class="line"></span><br><span class="line">4. 缓存优化：如果查询频率较高，可以考虑将查询结果缓存起来，以减少数据库访问次数。</span><br><span class="line"></span><br><span class="line">5. 查询语句优化：使用EXISTS或IN子查询代替BETWEEN操作符，可以提高查询效率。例如：</span><br><span class="line"></span><br><span class="line">SELECT COUNT(*) FROM emp WHERE HIREDATE IN (SELECT HIREDATE FROM emp WHERE HIREDATE &gt;= &#x27;2012-01-01&#x27; AND HIREDATE &lt;= &#x27;2012-12-31&#x27;);</span><br><span class="line"></span><br><span class="line">或者：</span><br><span class="line"></span><br><span class="line">SELECT COUNT(*) FROM emp WHERE EXISTS (SELECT 1 FROM emp WHERE HIREDATE &gt;= &#x27;2012-01-01&#x27; AND HIREDATE &lt;= &#x27;2012-12-31&#x27; AND emp.HIREDATE = HIREDATE);</span><br><span class="line">--- END --- </span><br></pre></td></tr></table></figure>
+
+<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/alibaba/Chat2DB</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Chat2DB 不仅具有传统的数据库客户端的增删改查能力，同时还是具有了AI 能力，在复杂的业务SQL可能暂时还无法给到很正确提示，在后续的发展中正确性会越来越高的，感兴趣的小伙伴赶快去试试吧~</p>
 
                 
             </div>
@@ -463,7 +473,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ourceteams.github.io/2022/03/31/%E8%BD%BB%E6%9D%BE%E6%8A%93%E4%BD%8F%E5%86%85%E5%AE%B9%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%81/">http://ourceteams.github.io/2022/03/31/%E8%BD%BB%E6%9D%BE%E6%8A%93%E4%BD%8F%E5%86%85%E5%AE%B9%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%81/</a>
+                    <a href="http://ourceteams.github.io/2023/06/24/%E9%98%BF%E9%87%8C%E5%BC%80%E6%BA%90%E4%BA%86%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%EF%BC%8C%E4%B8%8AGitHub%E7%83%AD%E6%A6%9C%E4%BA%86%EF%BC%81/">http://ourceteams.github.io/2023/06/24/%E9%98%BF%E9%87%8C%E5%BC%80%E6%BA%90%E4%BA%86%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%EF%BC%8C%E4%B8%8AGitHub%E7%83%AD%E6%A6%9C%E4%BA%86%EF%BC%81/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -501,8 +511,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%80%81%E8%83%A1/">
-                                    <span class="chip bg-color">老胡</span>
+                                <a href="/tags/%E8%83%9C/">
+                                    <span class="chip bg-color">胜</span>
                                 </a>
                             
                         </div>
@@ -550,13 +560,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/04/05/2022%E5%B9%B43%E6%9C%88%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E7%B2%BE%E5%8D%8E%E9%83%BD%E5%9C%A8%E8%BF%99%E9%87%8C%E5%95%A6~%20/">
+                <a href="/2023/06/25/%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8CTeamViewer/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="2022年3月开源项目精华都在这里啦~">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="再见了，TeamViewer">
                         
-                        <span class="card-title">2022年3月开源项目精华都在这里啦~</span>
+                        <span class="card-title">再见了，TeamViewer</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -567,7 +577,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-25
                         </span>
                         <span class="publish-author">
                             
@@ -580,8 +590,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B0%B8%E6%81%92%E5%90%9B/">
-                        <span class="chip bg-color">永恒君</span>
+                    <a href="/tags/%E7%99%BD%E5%B0%8F%E7%99%BD/">
+                        <span class="chip bg-color">白小白</span>
                     </a>
                     
                 </div>
@@ -595,13 +605,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/31/%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9A%E8%A7%86%E9%A2%91%E5%9C%A8%E7%BA%BF%E6%92%AD%E6%94%BE%EF%BC%81/">
+                <a href="/2023/06/15/%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E9%A1%B5%E6%94%B6%E5%BD%95%E5%B7%A5%E5%85%B7%EF%BC%8C%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E6%89%93%E9%80%A0%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E8%B5%84%E6%96%99%E5%BA%93%E5%90%A7%EF%BC%81/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="轻松搞定视频在线播放！">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="超好用的网页收录工具，和我一起打造属于自己的资料库吧！">
                         
-                        <span class="card-title">轻松搞定视频在线播放！</span>
+                        <span class="card-title">超好用的网页收录工具，和我一起打造属于自己的资料库吧！</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -612,7 +622,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
                             </span>
                         <span class="publish-author">
                             
@@ -625,8 +635,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%80%81%E8%83%A1/">
-                        <span class="chip bg-color">老胡</span>
+                    <a href="/tags/%E7%99%BD%E5%B0%8F%E7%99%BD/">
+                        <span class="chip bg-color">白小白</span>
                     </a>
                     
                 </div>
