@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="前端日志怎么获取?, 开源小分队">
+    <meta name="keywords" content="国企年总包 45w，但是想去大厂卷……, 开源小分队">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>前端日志怎么获取? | 开源小分队</title>
+    <title>国企年总包 45w，但是想去大厂卷…… | 开源小分队</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">前端日志怎么获取?</h1>
+                    <h1 class="description center-align post-title">国企年总包 45w，但是想去大厂卷……</h1>
                 </div>
             </div>
         </div>
@@ -387,8 +387,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%83%9C/">
-                                <span class="chip bg-color">胜</span>
+                            <a href="/tags/%E7%99%BD%E5%B0%8F%E7%99%BD/">
+                                <span class="chip bg-color">白小白</span>
                             </a>
                         
                     </div>
@@ -403,7 +403,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-21
+                    2023-07-26
                 </div>
                 
 
@@ -424,42 +424,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>大家好，我是爱学习的了不起！</p>
-<p>前端开发者在面对用户反馈页面功能异常时，最常说的是：在我这好好的，你重启一下。有的问题在开发者这根本复现不出来，很难解决问题，冥思苦想也不知道问题出在哪里。</p>
-<p>今天了不起给大家推荐一款美团推出的大前端日志系统 – Logan 可以完美解决这个问题。</p>
-<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p>Logan 是一整套前端日志解决方案，包括日志收集、日志上报、可视化展示，支持 Android 和 IOS。</p>
-<p><img src="https://camo.githubusercontent.com/a73d7ec02c73fb1b0595dbca7c712019964542e0340ad3006bc576662162a0a6/68747470733a2f2f6d73732d73686f6e2e73616e6b7561692e636f6d2f76312f6d73735f37643663643834623532643534333234386262623733346162643339326539612f6c6f67616e2d6f70656e2d736f757263652f6c6f67616e5f617263682e706e67"></p>
-<h2 id="业务流程"><a href="#业务流程" class="headerlink" title="业务流程"></a>业务流程</h2><p>1、用户在使用过程中日志存储在本地容器中</p>
-<p>2、出现异常或者用户反馈，Logan 将本地日志上传到服务器</p>
-<p>3、服务端日志分析</p>
-<p>3、Logan 统一的日志分析平台展示日志数据</p>
-<p>4、开发者根据日志排查问题</p>
-<p><img src="https://p1.meituan.net/travelcube/53c2b7487a8448cfd1aaafd55857aa7b75970.png"></p>
-<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a><strong>最佳实践</strong></h2><p><img src="https://pic4.zhimg.com/80/v2-48d2b8b74ec73ee853e47757fb26bcf7_1440w.webp" alt="img"></p>
-<h3 id="日志输入"><a href="#日志输入" class="headerlink" title="日志输入"></a><strong>日志输入</strong></h3><p>Logan在输入层将代码级日志、网络日志、用户行为日志、崩溃日志、H5日志等内容往Logan中存储一份。</p>
-<h3 id="日志存储"><a href="#日志存储" class="headerlink" title="日志存储"></a><strong>日志存储</strong></h3><p>Logan采用日志本地聚合存储，“先压缩再加密”的顺序，使用流式的加密和压缩，减少了CPU使用。日志文件只保留最近7天的日志，过期会自动删除。Logan核心逻辑都在C层完成，提供了跨平台支持的能力。</p>
-<h3 id="接收日志"><a href="#接收日志" class="headerlink" title="接收日志"></a><strong>接收日志</strong></h3><p>客户端日志上报形式：主动上报和回捞上报。</p>
-<p>主动上报通过客服引导用户上报，也可以进行预埋，在特定行为发生时进行上报。</p>
-<p>回捞上报是由后端向客户端发起回捞指令。</p>
-<h3 id="日志解析"><a href="#日志解析" class="headerlink" title="日志解析"></a><strong>日志解析</strong></h3><p>客户端上报的日志经过加密和压缩处理，后端需要对数据解密、解压，最终数据存储。</p>
-<h3 id="日志分析"><a href="#日志分析" class="headerlink" title="日志分析"></a>日志分析</h3><p>不同类型日志由不同的字段组成，对各类日志进行分析汇总串联，最终形成一个完整的个人日志。</p>
-<h3 id="可视化系统"><a href="#可视化系统" class="headerlink" title="可视化系统"></a>可视化系统</h3><p>目前支持了以下功能：</p>
-<ul>
-<li>日志可视化:所有的日志都经过结构化处理后，按照时间顺序展示。</li>
-<li>时间轴:数据可视化，利用图形方式进行语义分析。</li>
-<li>日志搜索:快速定位到相关日志内容。</li>
-<li>日志筛选:支持多类型日志，选择需要分析的日志。</li>
-</ul>
-<p><img src="https://p0.meituan.net/travelcube/a8da3144f3d7cfff01205fc9a2595e3c566520.png"></p>
-<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/Meituan-Dianping/Logan</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Logan 是大前端日志系统，可为客户端、Web、小程序等用户端提供前端日志的存储、收集、上报及分析能力，帮助开发人员快速定位并解决问题，便于及时排除系统异常。有需要的小伙伴赶快去试试吧~</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎加我微信，邀请加入 <strong>交流群</strong>，目前群里都在讨论整理更多GPT玩法，教你如何更好的调教使用GPT，提升效率，甚至如何使用GPT赚钱等等，欢迎围观~</p>
-<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/4XgGs2SeJoEUohP9gSCHUdFUibY3zg0LYw2ZGb5zZstSwicesOpqKYuyNpHE8bx42HkJ4Zib65lZZ5KoibGibT8cwRw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
-<p>问君能有几多愁，开源项目解千愁，我们下期再见！</p>
-<blockquote>
-<p>大家的点赞、收藏和评论对了不起非常重要，如文章对你有帮助还请转发支持下，谢谢！</p>
-</blockquote>
+                <p>大家好，我是爱吃瓜的了不起。</p>
+<h2 id="看到一个帖子"><a href="#看到一个帖子" class="headerlink" title="看到一个帖子"></a>看到一个帖子</h2><p>这几天在某脉上看到一个帖子，发帖人是一名 PM。大致内容是自己目前在国企年总包 45w，但是想去大厂镀金，想问问大家的看法。</p>
+<p>楼主之所以要去大厂，主要是以下几点：</p>
+<ol>
+<li>想学点东西，因为国企的产品天花板比较低</li>
+<li>提升收入</li>
+<li>大厂的 PM 背景更受认可</li>
+<li>国企也有国企的不快乐</li>
+</ol>
+<p><img src="http://img.esparks.cn/img/20230726230601_769dc09ea04de8641b524cb5a4fe5e58.png"></p>
+<p>帖子下面的评论都炸开了锅，有人说楼主是最美逆行者：</p>
+<p><img src="http://img.esparks.cn/img/20230726230601_0dbedb0e3b919aab20c8ec656a8084fc.png"></p>
+<p>有阿里员工表示，可以帮忙内推，但是楼主也要把他内推进国企哈哈哈：</p>
+<p><img src="http://img.esparks.cn/img/20230726230601_61143b873cef7a4bf3da06a93cbfbaf0.png"></p>
+<p>有华为员工表示我们准备提前入职了：</p>
+<p><img src="http://img.esparks.cn/img/20230726230601_3f43d60fe5744917fb691a748d3e6c74.png" alt="image-20230726230510418"></p>
+<p>也有实在人说出了这件事的核心：</p>
+<p><img src="http://img.esparks.cn/img/20230726230601_52481dd20aa5c9f8a73ed2d3687926e9.png"></p>
+<h2 id="国企-OR-大厂"><a href="#国企-OR-大厂" class="headerlink" title="国企 OR 大厂"></a>国企 OR 大厂</h2><p>去稳定但是薪资不高的国企，还是去卷的不行但是薪资很有吸引力的大厂，每个人都有各自的看法。</p>
+<p>有些人认为国企稳定、清闲，虽然钱赚的不多，技术方面有些落后，但是每天都能按时下班，有自己的生活。</p>
+<p>有些人认为大厂赚得多，技术好，能学到很多东西，工作经历是一生的光环。但是卷起来也是不要命，下班到家就该睡觉了，没有属于自己的生活，时间长了身体也垮了。如果大环境变差了，裁员也会让自己随时丢了工作。</p>
+<p>了不起认为，国企和互联网大厂真的是各有各的优点和缺点，而他们的优缺点，是可以和人的成长经历所匹配的。刚毕业时，你年轻有干劲，而且需要快速的学习和成长。而且刚毕业也是穷小子一个，对财富的渴求也是相当的强烈。这时候互联网大厂真是一个很好的选择。你能接触到最主流的技术，快速学习成长。卷的话也有体力，薪资也会比其他行业的同龄人高上一截。</p>
+<p>等你卷了几年之后，年纪大了，体力也不够了，卷不动同组的年轻人了。技术的成长也许遇到了瓶颈，而且还要开始焦虑是不是熬不过 35 岁这个坎了，财富也积累了一些。那这时候，你的主要需求就是工作的稳定和生活的平衡了。此时抓紧找个国企上岸，也是个不错的选择。</p>
+<p>所以说，本文中说的帖子，楼主真的是“逆行者”了。</p>
+<h2 id="你怎么选呢？"><a href="#你怎么选呢？" class="headerlink" title="你怎么选呢？"></a>你怎么选呢？</h2><p>发起一个投票，看看大家都是怎么选择的吧。</p>
+<p>总包 45w 的国企，朝九晚五，能干到退休。但是技术有天花板，人际关系复杂。</p>
+<p>总包 80w 的互联网大厂，技术氛围好，但是 995，随时会有裁员风险。</p>
 
                 
             </div>
@@ -486,7 +477,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ourceteams.github.io/2023/07/21/%E5%89%8D%E7%AB%AF%E6%97%A5%E5%BF%97%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96/">http://ourceteams.github.io/2023/07/21/%E5%89%8D%E7%AB%AF%E6%97%A5%E5%BF%97%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96/</a>
+                    <a href="http://ourceteams.github.io/2023/07/26/%E5%9B%BD%E4%BC%81%E5%B9%B4%E6%80%BB%E5%8C%85%2045w%EF%BC%8C%E4%BD%86%E6%98%AF%E6%83%B3%E5%8E%BB%E5%A4%A7%E5%8E%82%E5%8D%B7%E2%80%A6%E2%80%A6/">http://ourceteams.github.io/2023/07/26/%E5%9B%BD%E4%BC%81%E5%B9%B4%E6%80%BB%E5%8C%85%2045w%EF%BC%8C%E4%BD%86%E6%98%AF%E6%83%B3%E5%8E%BB%E5%A4%A7%E5%8E%82%E5%8D%B7%E2%80%A6%E2%80%A6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -524,8 +515,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%83%9C/">
-                                    <span class="chip bg-color">胜</span>
+                                <a href="/tags/%E7%99%BD%E5%B0%8F%E7%99%BD/">
+                                    <span class="chip bg-color">白小白</span>
                                 </a>
                             
                         </div>
@@ -573,13 +564,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/07/21/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E5%BE%88%E9%97%B7sao%E4%B9%88%EF%BC%9F/">
+                <a href="/2023/07/26/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BE%88%E5%A4%9A%E7%A8%8B%E5%BA%8F%E5%91%98%E8%AE%A8%E5%8E%8C%E4%BD%8E%E4%BB%A3%E7%A0%81%EF%BC%9F/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="程序员都很闷sao么？">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="为什么很多程序员讨厌低代码？">
                         
-                        <span class="card-title">程序员都很闷sao么？</span>
+                        <span class="card-title">为什么很多程序员讨厌低代码？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -590,7 +581,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-26
                         </span>
                         <span class="publish-author">
                             
@@ -603,8 +594,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B0%B8%E6%81%92%E5%90%9B/">
-                        <span class="chip bg-color">永恒君</span>
+                    <a href="/tags/%E8%83%9C/">
+                        <span class="chip bg-color">胜</span>
                     </a>
                     
                 </div>
@@ -618,13 +609,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/07/18/%E6%88%91%E5%9C%A8%E5%8D%97%E6%9E%81%E7%9C%8B%E9%9B%AA%E6%99%AF%EF%BC%8C%E4%BD%A0%E5%91%A2%EF%BC%9F/">
+                <a href="/2023/07/23/70k%20star%20%E7%9A%84%E6%9C%80%E5%BC%BA%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E5%B7%A5%E5%85%B7%EF%BC%8C%E4%BD%A0%E4%B8%80%E5%AE%9A%E8%A6%81%E8%AF%95%E8%AF%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="我在南极看雪景，你呢？">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="70k star 的最强内网穿透工具，你一定要试试">
                         
-                        <span class="card-title">我在南极看雪景，你呢？</span>
+                        <span class="card-title">70k star 的最强内网穿透工具，你一定要试试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -635,7 +626,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-23
                             </span>
                         <span class="publish-author">
                             
